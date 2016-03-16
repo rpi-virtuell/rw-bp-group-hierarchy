@@ -1,13 +1,17 @@
 <?php
 /*
-Plugin Name: RW BP Group Hierarchy
-Plugin URI: http://www.generalthreat.com/projects/buddypress-group-hierarchy/
-Description: Allows BuddyPress groups to belong to other groups. Forked from RW BP Group Hierarchy from David Dean (http://www.generalthreat.com/projects/buddypress-group-hierarchy/)
-Version: 1.4.3
-Tested up to: WP 4.4.2, BuddyPress 2.5
-License: Example: GNU General Public License 2.0 (GPL) http://www.gnu.org/licenses/gpl.html
-Author: Frank Staude
-Author URI: https://www.staude.net/
+ * Plugin Name: RW BP Group Hierarchy
+ * Plugin URI: https://github.com/rpi-virtuell/rw-bp-group-hierarchy
+ * Description: Allows BuddyPress groups to belong to other groups. Forked from RW BP Group Hierarchy from David Dean (http://www.generalthreat.com/projects/buddypress-group-hierarchy/)
+ * Version: 1.5.0
+ * Tested up to: WP 4.4.2, BuddyPress 2.5
+ * License: Example: GNU General Public License 2.0 (GPL) http://www.gnu.org/licenses/gpl.html
+ * Author: Frank Staude
+ * Author URI: https://www.staude.net/
+ * GitHub Plugin URI: https://github.com/rpi-virtuell/rw-bp-group-hierarchy
+ * GitHub Branch:     master
+ * Requires WP:       4.0
+ * Requires PHP:      5.3
 */
 
 define ( 'BP_GROUP_HIERARCHY_IS_INSTALLED', 1 );
