@@ -71,7 +71,7 @@ class BP_Groups_Hierarchy_Component extends BP_Groups_Component {
 			'root_slug'             => isset( $bp->pages->groups->slug ) ? $bp->pages->groups->slug : BP_GROUPS_SLUG,
 			'has_directory'         => true,
 			'notification_callback' => 'groups_format_notifications',
-			'search_string'         => __( 'Search Groups...', 'buddypress' ),
+			'search_string'         => _x( 'Search Groups...', 'Component directory search', 'buddypress' ),
 			'global_tables'         => $global_tables,
 			'meta_tables'           => $meta_tables,
 		);
