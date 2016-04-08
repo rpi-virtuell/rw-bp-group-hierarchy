@@ -3,24 +3,24 @@ msgstr ""
 "Project-Id-Version: BP Group Hierarchy\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bp-group-hierarchy\n"
 "POT-Creation-Date: 2014-04-10 03:19:46+00:00\n"
-"PO-Revision-Date: Tue Dec 15 2015 15:51:36 GMT+0100 (Mitteleuropäische Zeit)\n"
-"Last-Translator: Bernd Ost <bernd.ost@eeb-virtuell.de>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: German\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"PO-Revision-Date: 2016-04-08 13:03+0200\n"
+"Last-Translator: Frank Staude <frank@staude.net>\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: ..\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
-"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
-"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
-"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
-"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: de_DE\n"
-"X-Generator: Loco - https://localise.biz/"
+"X-Generator: Poedit 1.8.7\n"
+"Language-Team: \n"
+"X-Poedit-SearchPath-0: ..\n"
 
 #: bp-group-hierarchy-admin.php:124
 msgid "Name of the nav item on an individual group's page."
@@ -28,7 +28,7 @@ msgstr "Name des \"nav items\" auf einer Gruppenseite."
 
 #: extension.php:153 extension.php:170 extension.php:251
 msgid "Site Root"
-msgstr "Site Root"
+msgstr "Keine übergeordnete Gruppe"
 
 #: bp-group-hierarchy-admin.php:18
 msgid "Hierarchy Settings"
@@ -38,8 +38,7 @@ msgstr "Hierarchie-Einstellungen"
 msgid "Group Hierarchy"
 msgstr "Gruppen-Hierarchie"
 
-#: bp-group-hierarchy-admin.php:68 bp-group-hierarchy-admin.php:129
-#: extension.php:821
+#: bp-group-hierarchy-admin.php:68 bp-group-hierarchy-admin.php:129 extension.php:821
 msgid "Group Tree"
 msgstr "Gruppenhierarchie"
 
@@ -62,8 +61,7 @@ msgstr "Zeige Gruppenhierarchie"
 
 #: bp-group-hierarchy-admin.php:83
 msgid ""
-"Show the Group Tree view on the Groups page along with the flat list of "
-"groups."
+"Show the Group Tree view on the Groups page along with the flat list of groups."
 msgstr "Gruppenübersicht: Zeige die Hierarchie UND die Listenansicht an."
 
 #: bp-group-hierarchy-admin.php:88
@@ -73,8 +71,7 @@ msgstr "Gruppenliste verbergen"
 #: bp-group-hierarchy-admin.php:92
 msgid "Hide the flat list of groups and show ONLY the Group Tree on the Groups page"
 msgstr ""
-"Gruppenübersicht: Zeige nur die Gruppenhierarchie an (Gruppenliste wird "
-"verborgen)"
+"Gruppenübersicht: Zeige nur die Gruppenhierarchie an (Gruppenliste wird verborgen)"
 
 #: bp-group-hierarchy-admin.php:97 bp-group-hierarchy-widgets.php:14
 msgid "Toplevel Groups"
@@ -82,8 +79,8 @@ msgstr "Oberste Gruppenebene"
 
 #: bp-group-hierarchy-admin.php:107
 msgid ""
-"Select who is allowed to create toplevel groups. Super admins can always "
-"create toplevel groups."
+"Select who is allowed to create toplevel groups. Super admins can always create "
+"toplevel groups."
 msgstr "Auswahl: Wer darf Toplevel-Gruppen erstellen? (Superadmins dürfen das immer)."
 
 #: bp-group-hierarchy-admin.php:121
@@ -214,8 +211,7 @@ msgstr "Gruppen-Navigator"
 
 #: bp-group-hierarchy-widgets.php:122
 msgid ""
-"A list of member groups of the current group, or top-level groups anywhere "
-"else."
+"A list of member groups of the current group, or top-level groups anywhere else."
 msgstr "Liste der Untergruppen der aktuellen Gruppe (bzw. der Top-Level-Gruppen)."
 
 #: bp-group-hierarchy-widgets.php:206
