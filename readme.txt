@@ -61,7 +61,8 @@ No. There is currently no way to have activity propagate up without creating dup
 
 == Changelog ==
 = 1.5.2
-* fixed admin view
+* fixed admin view: fix display error in subgroup listing
+* add function: remove from parent group in subgoup listing
 
 = 1.5.1 =
 * german translation changed
