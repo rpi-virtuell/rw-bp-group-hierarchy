@@ -271,11 +271,13 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 			</select>
 			<?php
 		} else {
+            /*
 			?>
 			<div id="message">
 				<p><?php _e('Only a site administrator can edit the group hierarchy.', 'bp-group-hierarchy' ); ?></p>
 			</div>
 			<?php
+            */
 		}
 		
 		if(is_super_admin() || bp_group_is_admin()) {
@@ -345,25 +347,28 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 		bp_core_redirect( bp_get_group_admin_permalink( $bp->groups->current_group ) );
 	}
 	
-	function display($page = 1) {
+	function display($group_id = null) {
 		global $bp, $groups_template;
-		
+
+
+        if( isset($_REQUEST["remove_from_parent_group"]) && wp_verify_nonce($_GET['_wpnonce'], 'remove_from_parent_group' )){
+            bp_group_hierarchy_remove_parent(intval($_REQUEST["remove_from_parent_group"]));
+        }
+
 		$parent_template = $groups_template;
 		$hide_button = false;
 		
 		if(isset($_REQUEST['grpage'])) {
 			$page = (int)$_REQUEST['grpage'];
-		} else if(!is_numeric($page)) {
-			$page = 1;
 		} else {
-			$page = (int)$page;
+			$page = 1;
 		}
 		
 		/** Respect BuddyPress group creation restriction */
 		if(function_exists('bp_user_can_create_groups')) {
 			$hide_button = !bp_user_can_create_groups();
 		}
-		
+
 		bp_has_groups_hierarchy(array(
 			'type'		=> 'alphabetical',
 			'parent_id'	=> $bp->groups->current_group->id,
@@ -412,7 +417,8 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 					<div class="action">
 						<?php do_action( 'bp_directory_groups_actions' ) ?>
 						<div class="meta">
-							<?php bp_group_type() ?> / <?php bp_group_member_count() ?>
+							<?php bp_group_type() ?> <br> <?php bp_group_member_count() ?>
+                            <br><?php bp_group_hierarchy_remove_parent_link($subgroup) ?>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -444,6 +450,19 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 		// reset the $groups_template global and continue with the page
 		$groups_template = $parent_template;
 	}
+}
+function bp_group_hierarchy_remove_parent_link($subgroup){
+    global $bp;
+    if( groups_is_user_admin( $bp->loggedin_user->id, $subgroup->id ) ) {
+        ?>
+        <a href="<?php print wp_nonce_url('?remove_from_parent_group=' . $subgroup->id, 'remove_from_parent_group') ?>"><?php _e('Remove from parent group', 'bp-group-hierarchy'); ?></a>
+        <?php
+    }
+}
+function bp_group_hierarchy_remove_parent($group_id){
+    global $bp,$wpdb;
+    $sql = "update {$bp->groups->table_name} set parent_id = 0 where id = ".intval($group_id);
+    $wpdb->query($sql);
 }
 
 bp_register_group_extension( 'BP_Groups_Hierarchy_Extension' );
