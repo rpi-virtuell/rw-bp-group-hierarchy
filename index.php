@@ -12,6 +12,7 @@
  * GitHub Branch:     master
  * Requires WP:       4.0
  * Requires PHP:      5.3
+ * Text Domain: bp-group-hierarchy
 */
 
 define ( 'BP_GROUP_HIERARCHY_IS_INSTALLED', 1 );
