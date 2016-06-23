@@ -2,292 +2,302 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BP Group Hierarchy\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/bp-group-hierarchy\n"
-"POT-Creation-Date: 2014-04-10 03:19:46+00:00\n"
-"PO-Revision-Date: 2016-04-08 13:03+0200\n"
-"Last-Translator: Frank Staude <frank@staude.net>\n"
+"POT-Creation-Date: 2016-06-16 18:16+0100\n"
+"PO-Revision-Date: 2016-06-16 18:19+0100\n"
+"Last-Translator: Joachim Happel <joachim.happel@gmail.com>\n"
+"Language-Team: \n"
 "Language: de\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
-"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
-"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
-"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
-"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: de_DE\n"
-"X-Generator: Poedit 1.8.7\n"
-"Language-Team: \n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: bp-group-hierarchy-admin.php:124
-msgid "Name of the nav item on an individual group's page."
-msgstr "Name des \"nav items\" auf einer Gruppenseite."
-
-#: extension.php:153 extension.php:170 extension.php:251
-msgid "Site Root"
-msgstr "Keine übergeordnete Gruppe"
-
-#: bp-group-hierarchy-admin.php:18
+#: ../bp-group-hierarchy-admin.php:18
 msgid "Hierarchy Settings"
 msgstr "Hierarchie-Einstellungen"
 
-#: bp-group-hierarchy-admin.php:20 extension.php:37
+#: ../bp-group-hierarchy-admin.php:20 ../extension.php:37
 msgid "Group Hierarchy"
 msgstr "Gruppen-Hierarchie"
 
-#: bp-group-hierarchy-admin.php:68 bp-group-hierarchy-admin.php:129 extension.php:821
+#: ../bp-group-hierarchy-admin.php:68 ../bp-group-hierarchy-admin.php:129
+#: ../extension.php:840
 msgid "Group Tree"
 msgstr "Gruppenhierarchie"
 
-#: bp-group-hierarchy-admin.php:69 bp-group-hierarchy-widgets.php:197
-#: extension.php:190 extension.php:191 extension.php:296 extension.php:297
+#: ../bp-group-hierarchy-admin.php:69 ../bp-group-hierarchy-widgets.php:197
+#: ../extension.php:190 ../extension.php:191 ../extension.php:298
+#: ../extension.php:299
 msgid "Member Groups"
 msgstr "assoziierte Gruppen"
 
-#: bp-group-hierarchy-admin.php:73
+#: ../bp-group-hierarchy-admin.php:73
 msgid "Settings saved."
 msgstr "Die Einstellungen wurden gespeichert."
 
-#: bp-group-hierarchy-admin.php:74
+#: ../bp-group-hierarchy-admin.php:74
 msgid "Group Hierarchy Settings"
 msgstr "Gruppenhierarchie-Einstellungen"
 
-#: bp-group-hierarchy-admin.php:79
+#: ../bp-group-hierarchy-admin.php:79
 msgid "Show Group Tree"
 msgstr "Zeige Gruppenhierarchie"
 
-#: bp-group-hierarchy-admin.php:83
+#: ../bp-group-hierarchy-admin.php:83
 msgid ""
-"Show the Group Tree view on the Groups page along with the flat list of groups."
+"Show the Group Tree view on the Groups page along with the flat list of "
+"groups."
 msgstr "Gruppenübersicht: Zeige die Hierarchie UND die Listenansicht an."
 
-#: bp-group-hierarchy-admin.php:88
+#: ../bp-group-hierarchy-admin.php:88
 msgid "Hide Group List"
 msgstr "Gruppenliste verbergen"
 
-#: bp-group-hierarchy-admin.php:92
-msgid "Hide the flat list of groups and show ONLY the Group Tree on the Groups page"
+#: ../bp-group-hierarchy-admin.php:92
+msgid ""
+"Hide the flat list of groups and show ONLY the Group Tree on the Groups page"
 msgstr ""
-"Gruppenübersicht: Zeige nur die Gruppenhierarchie an (Gruppenliste wird verborgen)"
+"Gruppenübersicht: Zeige nur die Gruppenhierarchie an (Gruppenliste wird "
+"verborgen)"
 
-#: bp-group-hierarchy-admin.php:97 bp-group-hierarchy-widgets.php:14
+#: ../bp-group-hierarchy-admin.php:97 ../bp-group-hierarchy-widgets.php:14
 msgid "Toplevel Groups"
 msgstr "Oberste Gruppenebene"
 
-#: bp-group-hierarchy-admin.php:107
+#: ../bp-group-hierarchy-admin.php:107
 msgid ""
-"Select who is allowed to create toplevel groups. Super admins can always create "
-"toplevel groups."
-msgstr "Auswahl: Wer darf Toplevel-Gruppen erstellen? (Superadmins dürfen das immer)."
+"Select who is allowed to create toplevel groups. Super admins can always "
+"create toplevel groups."
+msgstr ""
+"Auswahl: Wer darf Toplevel-Gruppen erstellen? (Superadmins dürfen das immer)."
 
-#: bp-group-hierarchy-admin.php:121
+#: ../bp-group-hierarchy-admin.php:121
 msgid "Nav Item"
 msgstr "Nav Item"
 
-#: bp-group-hierarchy-admin.php:125
-#, c-format
+#: ../bp-group-hierarchy-admin.php:124
+msgid "Name of the nav item on an individual group's page."
+msgstr "Name des \"nav items\" auf einer Gruppenseite."
+
+#: ../bp-group-hierarchy-admin.php:125
+#, php-format
 msgid "Use <code>%d</code> to include the number of child groups."
 msgstr "MIt <code>%d</code> die Anzahl der Untergruppen einschließen."
 
-#: bp-group-hierarchy-admin.php:132
+#: ../bp-group-hierarchy-admin.php:132
 msgid "Name of the Group Tree listing on the main Groups page."
 msgstr "Name der Gruppenhierarchieliste auf der Übersichtsseite."
 
-#: bp-group-hierarchy-admin.php:136 extension.php:300
+#: ../bp-group-hierarchy-admin.php:136 ../extension.php:302
 msgid "Save Changes"
 msgstr "Änderungen speichern"
 
-#: bp-group-hierarchy-loader.php:11
+#: ../bp-group-hierarchy-loader.php:11
 msgid "User Groups"
 msgstr "Benutzergruppen"
 
-#: bp-group-hierarchy-loader.php:74
+#: ../bp-group-hierarchy-loader.php:74
+msgctxt "Component directory search"
 msgid "Search Groups..."
-msgstr "Durchsuche Gruppen..."
+msgstr "Gruppen suchen ..."
 
-#: bp-group-hierarchy-loader.php:209
+#: ../bp-group-hierarchy-loader.php:209
 msgid "You do not have access to this group."
 msgstr "Du hast keinen Zugang zu dieser Gruppe."
 
-#: bp-group-hierarchy-loader.php:224
+#: ../bp-group-hierarchy-loader.php:224
 msgid "You are not an admin of this group."
 msgstr "Du bist kein Administrator dieser Gruppe."
 
-#: bp-group-hierarchy-loader.php:234
+#: ../bp-group-hierarchy-loader.php:234
 msgid "Details"
 msgstr "Details"
 
-#: bp-group-hierarchy-loader.php:238
+#: ../bp-group-hierarchy-loader.php:238
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: bp-group-hierarchy-loader.php:246
+#: ../bp-group-hierarchy-loader.php:246
 msgid "Avatar"
 msgstr "Avatar"
 
-#: bp-group-hierarchy-loader.php:254
+#: ../bp-group-hierarchy-loader.php:254
 msgid "Invites"
 msgstr "Einladungen"
 
-#: bp-group-hierarchy-widgets.php:14
+#: ../bp-group-hierarchy-widgets.php:14
 msgid "A list of top-level BuddyPress groups"
 msgstr "Die Liste der BuddyPress-Gruppen auf der obersten Ebene"
 
-#: bp-group-hierarchy-widgets.php:27 bp-group-hierarchy-widgets.php:141
+#: ../bp-group-hierarchy-widgets.php:27 ../bp-group-hierarchy-widgets.php:141
 msgid "You must enable Groups component to use this widget."
-msgstr "Um dieses Widget zu verwenden muss die Groups-Komponente aktiviert sein."
+msgstr ""
+"Um dieses Widget zu verwenden muss die Groups-Komponente aktiviert sein."
 
-#: bp-group-hierarchy-widgets.php:44 bp-group-hierarchy-widgets.php:158
-#, c-format
+#: ../bp-group-hierarchy-widgets.php:44 ../bp-group-hierarchy-widgets.php:158
+#, php-format
 msgid "created %s"
 msgstr "%s erstellt"
 
-#: bp-group-hierarchy-widgets.php:48 bp-group-hierarchy-widgets.php:162
-#: extension.php:405 templates/tree/tree-loop.php:54
-#, c-format
+#: ../bp-group-hierarchy-widgets.php:48 ../bp-group-hierarchy-widgets.php:162
+#: ../extension.php:410 ../templates/tree/tree-loop.php:54
+#, php-format
 msgid "active %s"
 msgstr "%s aktiv"
 
-#: bp-group-hierarchy-widgets.php:54 bp-group-hierarchy-widgets.php:168
-#, c-format
+#: ../bp-group-hierarchy-widgets.php:54 ../bp-group-hierarchy-widgets.php:168
+#, php-format
 msgid "%d member group"
 msgid_plural "%d member groups"
 msgstr[0] "%d assoziierte Gruppe"
 msgstr[1] "%d assoziierte Gruppen"
 
-#: bp-group-hierarchy-widgets.php:73 bp-group-hierarchy-widgets.php:187
+#: ../bp-group-hierarchy-widgets.php:73 ../bp-group-hierarchy-widgets.php:187
 msgid "There are no groups to display."
 msgstr "Keine Gruppen zum Anzeigen."
 
-#: bp-group-hierarchy-widgets.php:93 bp-group-hierarchy-widgets.php:197
+#: ../bp-group-hierarchy-widgets.php:93 ../bp-group-hierarchy-widgets.php:197
 msgid "Groups"
 msgstr "Gruppen"
 
-#: bp-group-hierarchy-widgets.php:100 bp-group-hierarchy-widgets.php:205
+#: ../bp-group-hierarchy-widgets.php:100 ../bp-group-hierarchy-widgets.php:205
 msgid "Title:"
 msgstr "Titel:"
 
-#: bp-group-hierarchy-widgets.php:101 bp-group-hierarchy-widgets.php:207
+#: ../bp-group-hierarchy-widgets.php:101 ../bp-group-hierarchy-widgets.php:207
 msgid "Max groups to show:"
 msgstr "Max. Anzahl Gruppen die angezeigt werden:"
 
-#: bp-group-hierarchy-widgets.php:104 bp-group-hierarchy-widgets.php:210
+#: ../bp-group-hierarchy-widgets.php:104 ../bp-group-hierarchy-widgets.php:210
 msgid "Order by:"
 msgstr "Sortieren nach:"
 
-#: bp-group-hierarchy-widgets.php:106 bp-group-hierarchy-widgets.php:212
-#: templates/tree/index-compat.php:42 templates/tree/index.php:58
+#: ../bp-group-hierarchy-widgets.php:106 ../bp-group-hierarchy-widgets.php:212
+#: ../templates/tree/index-compat.php:42 ../templates/tree/index.php:58
 msgid "Alphabetical"
 msgstr "Alphabetisch"
 
-#: bp-group-hierarchy-widgets.php:107 bp-group-hierarchy-widgets.php:213
-#: templates/tree/index-compat.php:41 templates/tree/index.php:57
+#: ../bp-group-hierarchy-widgets.php:107 ../bp-group-hierarchy-widgets.php:213
+#: ../templates/tree/index-compat.php:41 ../templates/tree/index.php:57
 msgid "Newly Created"
 msgstr "Neu eingerichtet"
 
-#: bp-group-hierarchy-widgets.php:108 bp-group-hierarchy-widgets.php:214
-#: templates/tree/index-compat.php:39 templates/tree/index.php:55
+#: ../bp-group-hierarchy-widgets.php:108 ../bp-group-hierarchy-widgets.php:214
+#: ../templates/tree/index-compat.php:39 ../templates/tree/index.php:55
 msgid "Last Active"
 msgstr "Zuletzt aktiv"
 
-#: bp-group-hierarchy-widgets.php:109 bp-group-hierarchy-widgets.php:215
+#: ../bp-group-hierarchy-widgets.php:109 ../bp-group-hierarchy-widgets.php:215
 msgid "Most Popular"
 msgstr "Am beliebtesten"
 
-#: bp-group-hierarchy-widgets.php:110 bp-group-hierarchy-widgets.php:216
+#: ../bp-group-hierarchy-widgets.php:110 ../bp-group-hierarchy-widgets.php:216
 msgid "Most Member Groups"
 msgstr "Meiste Untergruppen"
 
-#: bp-group-hierarchy-widgets.php:114 bp-group-hierarchy-widgets.php:220
+#: ../bp-group-hierarchy-widgets.php:114 ../bp-group-hierarchy-widgets.php:220
 msgid "Show descriptions:"
 msgstr "Beschreibungen anzeigen:"
 
-#: bp-group-hierarchy-widgets.php:122
+#: ../bp-group-hierarchy-widgets.php:122
 msgid "Group Navigator"
 msgstr "Gruppen-Navigator"
 
-#: bp-group-hierarchy-widgets.php:122
+#: ../bp-group-hierarchy-widgets.php:122
 msgid ""
-"A list of member groups of the current group, or top-level groups anywhere else."
-msgstr "Liste der Untergruppen der aktuellen Gruppe (bzw. der Top-Level-Gruppen)."
+"A list of member groups of the current group, or top-level groups anywhere "
+"else."
+msgstr ""
+"Liste der Untergruppen der aktuellen Gruppe (bzw. der Top-Level-Gruppen)."
 
-#: bp-group-hierarchy-widgets.php:206
+#: ../bp-group-hierarchy-widgets.php:206
 msgid "Title when on a group page:"
 msgstr "Überschrift auf einer Gruppenseite:"
 
-#: extension.php:40
-#, c-format
+#: ../extension.php:40
+#, php-format
 msgid "Member Groups %d"
 msgstr "Assoziierte Gruppen %d"
 
-#: extension.php:62
+#: ../extension.php:62
 msgid "Anybody"
 msgstr "Jeder"
 
-#: extension.php:63
+#: ../extension.php:63
 msgid "Nobody"
 msgstr "Niemand"
 
-#: extension.php:64
+#: ../extension.php:64
 msgid "only Group Members"
 msgstr "nur Gruppenmitglieder"
 
-#: extension.php:65
+#: ../extension.php:65
 msgid "only Group Admins"
 msgstr "nur Gruppen-Admins"
 
-#: extension.php:128 extension.php:168 extension.php:266
+#: ../extension.php:128 ../extension.php:168 ../extension.php:266
 msgid "Parent Group"
 msgstr "Übergeordnete Gruppe"
 
-#: extension.php:191 extension.php:297
-#, c-format
+#: ../extension.php:153 ../extension.php:170 ../extension.php:251
+msgid "Site Root"
+msgstr "Keine übergeordnete Gruppe"
+
+#: ../extension.php:191 ../extension.php:299
+#, php-format
 msgid "Allow %1$s to create %2$s"
 msgstr "%1$s darf %2$s erstellen"
 
-#: extension.php:276
-msgid "Only a site administrator can edit the group hierarchy."
-msgstr "Nur ein Site-Administrator kann die Gruppenhierarchie bearbeiten."
-
-#: extension.php:339
+#: ../extension.php:341
 msgid "There was an error saving; please try again."
 msgstr "Es gab ein Problem beim Speichern, bitte nochmal probieren!"
 
-#: extension.php:341
+#: ../extension.php:343
 msgid "Group hierarchy settings saved successfully."
 msgstr "Gruppenhierarchie-Einstellungen gespeichert."
 
-#: extension.php:378
-#, c-format
+#: ../extension.php:383
+#, php-format
 msgid "Create a %s"
 msgstr "Ein %s erstellen"
 
-#: extension.php:378
+#: ../extension.php:383
 msgid "Member Group"
 msgstr "assoziierte Gruppe"
 
-#: extension.php:440
+#: ../extension.php:446
 msgid "No member groups were found."
 msgstr "Es wurden keine assoziierte Gruppen gefunden."
 
-#: extension.php:710
-#, c-format
+#: ../extension.php:458
+msgid "Remove from parent group"
+msgstr "Von übergeordneten Gruppe lösen"
+
+#: ../extension.php:729
+#, php-format
 msgid "%s Directory"
 msgstr "%s Verzeichnis"
 
-#: extension.php:741 extension.php:771
+#: ../extension.php:760 ../extension.php:790
 msgid "Sorry, you are not allowed to create groups."
 msgstr "Du darfst leider keine Gruppen erstellen."
 
-#: extension.php:820
-#, c-format
+#: ../extension.php:839
+#, php-format
 msgid "Member Groups (%d)"
 msgstr "Assoziierte Gruppen (%d)"
 
-#: index.php:39
+#: ../index.php:41
 msgid ""
 "BuddyPress is not installed or the Groups component is not activated. Cannot "
 "continue install."
@@ -295,23 +305,29 @@ msgstr ""
 "BuddyPress nicht installiert oder die Groups-Komponente ist nicht aktiviert. "
 "Installation abgebrochen."
 
-#: templates/tree/index-compat.php:22 templates/tree/index.php:37
-#, c-format
+#: ../templates/tree/index-compat.php:22 ../templates/tree/index.php:37
+#, php-format
 msgid "My Groups <span>%s</span>"
 msgstr "Meine Gruppen <span>%s</span>"
 
-#: templates/tree/index-compat.php:36 templates/tree/index.php:53
+#: ../templates/tree/index-compat.php:36 ../templates/tree/index.php:53
 msgid "Order By:"
 msgstr "Sortieren nach:"
 
-#: templates/tree/index-compat.php:40 templates/tree/index.php:56
+#: ../templates/tree/index-compat.php:40 ../templates/tree/index.php:56
 msgid "Most Members"
 msgstr "Meiste Mitglieder"
 
-#: templates/tree/index.php:19
+#: ../templates/tree/index.php:19
 msgid "Create a Group"
 msgstr "Erstelle eine Gruppe"
 
-#: templates/tree/tree-loop.php:98
+#: ../templates/tree/tree-loop.php:98
 msgid "There were no groups found."
 msgstr "Es wurden keine Gruppen gefunden."
+
+#~ msgid "Search Groups..."
+#~ msgstr "Durchsuche Gruppen..."
+
+#~ msgid "Only a site administrator can edit the group hierarchy."
+#~ msgstr "Nur ein Site-Administrator kann die Gruppenhierarchie bearbeiten."

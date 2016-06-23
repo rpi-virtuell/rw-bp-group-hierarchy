@@ -60,6 +60,10 @@ No. There is currently no way to have activity propagate up without creating dup
 3. Hierarchy options when creating new groups
 
 == Changelog ==
+= 1.5.3
+* fixed component compqtibility issue with buddypress 2.6
+
+
 = 1.5.2
 * fixed admin view
 
