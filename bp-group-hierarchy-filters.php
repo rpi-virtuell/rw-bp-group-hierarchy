@@ -1,6 +1,6 @@
 <?php
 
-add_filter( 'bp_optional_components', 'bp_group_hierarchy_overload_groups' );
+add_filter( 'bp_optional_components', 'bp_group_hierarchy_overload_groups');
 add_filter( 'bp_current_action', 'group_hierarchy_override_current_action' );
 add_filter( 'bp_has_groups', 'bp_group_hierarchy_override_template', 10, 2 );
 add_filter( 'bp_get_group_permalink', 'bp_group_hierarchy_fixup_permalink' );
@@ -181,7 +181,6 @@ function bp_group_hierarchy_overload_groups( $components ) {
 	require dirname(__FILE__) . '/bp-group-hierarchy-functions.php';
 	
 	if( is_admin() && ! strpos( admin_url('admin-ajax.php'), $_SERVER['REQUEST_URI'] ) )	return $components;
-
 	global $bp;
 
 	$components = array_flip( $components );
@@ -189,13 +188,12 @@ function bp_group_hierarchy_overload_groups( $components ) {
 	if( array_key_exists( 'groups', $components ) ) {
 
 		require( BP_PLUGIN_DIR . '/bp-groups/bp-groups-loader.php' );
+		require( BP_PLUGIN_DIR . '/bp-groups/classes/class-bp-groups-component.php' );
 
 		remove_action( 'bp_setup_components', 'bp_setup_groups', 6);
 		add_action( 'bp_setup_components', 'bp_setup_groups_hierarchy', 6);
 		
 		require dirname(__FILE__) . '/bp-group-hierarchy-loader.php';
-		/* @since required with buddypress 2.6.1 */
-		require( BP_PLUGIN_DIR . '/bp-groups/classes/class-bp-groups-component.php' );
 		
 	}
 

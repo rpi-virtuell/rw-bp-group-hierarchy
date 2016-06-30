@@ -3,7 +3,7 @@
  * Plugin Name: RW BP Group Hierarchy
  * Plugin URI: https://github.com/rpi-virtuell/rw-bp-group-hierarchy
  * Description: Allows BuddyPress groups to belong to other groups. Forked from RW BP Group Hierarchy from David Dean (http://www.generalthreat.com/projects/buddypress-group-hierarchy/)
- * Version: 1.5.4
+ * Version: 1.5.3
  * Tested up to: WP 4.5.3, BuddyPress 2.6
  * License: Example: GNU General Public License 2.0 (GPL) http://www.gnu.org/licenses/gpl.html
  * Author: Frank Staude
@@ -15,7 +15,7 @@
 */
 
 define ( 'BP_GROUP_HIERARCHY_IS_INSTALLED', 1 );
-define ( 'BP_GROUP_HIERARCHY_VERSION', '1.5.4' );
+define ( 'BP_GROUP_HIERARCHY_VERSION', '1.4.2' );
 define ( 'BP_GROUP_HIERARCHY_DB_VERSION', 1 );
 if( ! defined( 'BP_GROUP_HIERARCHY_SLUG' ) )
 	define ( 'BP_GROUP_HIERARCHY_SLUG', 'hierarchy' );
@@ -29,13 +29,11 @@ require ( dirname( __FILE__ ) . '/bp-group-hierarchy-widgets.php' );
 *************************************************************************/
 
 register_activation_hook( __FILE__, 'bp_group_hierarchy_install' );
-
 /**
  * Install and/or upgrade the database
  */
 function bp_group_hierarchy_install() {
 	global $wpdb, $bp;
-
 	// Check whether BP is active and whether Groups component is loaded, and throw error if not
 	if( ! ( function_exists( 'buddypress' ) || is_a( $bp, 'BuddyPress' ) ) || ! bp_is_active( 'groups' ) ) {
 		_e( 'BuddyPress is not installed or the Groups component is not activated. Cannot continue install.', 'bp-group-hierarchy' );
