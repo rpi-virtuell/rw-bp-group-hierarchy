@@ -181,7 +181,7 @@ function bp_group_hierarchy_overload_groups( $components ) {
 	require dirname(__FILE__) . '/bp-group-hierarchy-functions.php';
 	
 	if( is_admin() && ! strpos( admin_url('admin-ajax.php'), $_SERVER['REQUEST_URI'] ) )	return $components;
-	
+
 	global $bp;
 
 	$components = array_flip( $components );
@@ -194,6 +194,8 @@ function bp_group_hierarchy_overload_groups( $components ) {
 		add_action( 'bp_setup_components', 'bp_setup_groups_hierarchy', 6);
 		
 		require dirname(__FILE__) . '/bp-group-hierarchy-loader.php';
+		/* @since required with buddypress 2.6.1 */
+		require( BP_PLUGIN_DIR . '/bp-groups/classes/class-bp-groups-component.php' );
 		
 	}
 
