@@ -130,7 +130,12 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 		<?php echo $parent_group->name ?>
 		<?php
 	}
-	
+
+	/***
+	 * removed since 1.5.4
+	 * create_screen
+	 */
+	/*
 	function create_screen( $group_id = null ) {
 		
 		global $bp;
@@ -159,7 +164,6 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 			$display_groups[] = $group;
 		}
 		
-		/* deprecated */
 		$display_groups = apply_filters( 'bp_group_hierarchy_display_groups', $display_groups );
 		
 		$display_groups = apply_filters( 'bp_group_hierarchy_available_parent_groups', $display_groups, $this_group );
@@ -193,7 +197,8 @@ class BP_Groups_Hierarchy_Extension extends BP_Group_Extension {
 		<?php
 		wp_nonce_field( 'groups_create_save_' . $this->slug );
 	}
-	
+	*/
+
 	function create_screen_save( $group_id = null ) {
 		global $bp;
 		

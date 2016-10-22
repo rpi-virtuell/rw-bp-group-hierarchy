@@ -61,7 +61,7 @@ No. There is currently no way to have activity propagate up without creating dup
 
 == Changelog ==
 = 1.5.4
-* fixed component compatibility issue with buddypress 2.6.1
+* fixed component compatibility issue with buddypress 2.7
 
 = 1.5.3
 * fixed component compatibility issue with buddypress 2.6
