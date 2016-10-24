@@ -3,7 +3,7 @@
  * Plugin Name: RW BP Group Hierarchy
  * Plugin URI: https://github.com/rpi-virtuell/rw-bp-group-hierarchy
  * Description: Allows BuddyPress groups to belong to other groups. Forked from BP Group Hierarchy from David Dean (http://www.generalthreat.com/projects/buddypress-group-hierarchy/)
- * Version: 1.5.4
+ * Version: 1.5.5
  * Tested up to: WP 4.6.1, BuddyPress 2.7
  * License: Example: GNU General Public License 2.0 (GPL) http://www.gnu.org/licenses/gpl.html
  * Author: Frank Staude
@@ -11,7 +11,8 @@
  * Contributer: Joachim Happel http://joachim-happel.de
  * GitHub Plugin URI: https://github.com/rpi-virtuell/rw-bp-group-hierarchy
  * GitHub Branch:     master
- * Requires WP:       4.0
+ * Requires WP:       4.6
+ * Requires BP:       2.7
  * Requires PHP:      5.3
 */
 

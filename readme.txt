@@ -1,9 +1,9 @@
 === RW BP Group Hierarchy ===
 Contributors: f.staude jo  happel
 Tags: buddypress, groups, subgroups, hierarchy, parent group
-Requires at least: WP 4.0, BuddyPress 2
-Tested up to: WP 4.5.2, BuddyPress 2.5.3
-Stable tag: 1.5.2
+Requires at least: WP 4.6, BuddyPress 2.7
+Tested up to: WP 4.6.1, BuddyPress 2.7
+Stable tag: 1.5.5
 
 Allows BuddyPress groups to have subgroups.
 
