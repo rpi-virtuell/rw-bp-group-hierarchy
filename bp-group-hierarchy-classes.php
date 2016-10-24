@@ -20,7 +20,7 @@ class BP_Groups_Hierarchy extends BP_Groups_Group {
 	var $vars = null;
 
 	function __construct( $id, $parent_id = 0, $args = array() ) {
-		
+
 		global $bp, $wpdb;
 
 		if( ! function_exists( 'buddypress' ) ) {
@@ -32,7 +32,7 @@ class BP_Groups_Hierarchy extends BP_Groups_Group {
 			bp_group_hierarchy_debug('BP Groups Component not loaded');
 			return;
 		}
-		
+
 		$this->args = wp_parse_args( $args, array(
 			'populate_extras' => false,
 		) );
@@ -40,7 +40,7 @@ class BP_Groups_Hierarchy extends BP_Groups_Group {
 		if( ! is_numeric( $id ) ) {
 			$id = $this->group_exists( $id, $parent_id );
 		}
-		
+
 		if ( $id ) {
 			$this->id = $id;
 			$this->populate();
@@ -51,18 +51,13 @@ class BP_Groups_Hierarchy extends BP_Groups_Group {
 		global $wpdb, $bp;
 
 		parent::populate();
-		
- 		$parent_id = $wpdb->get_var( $wpdb->prepare( "SELECT g.parent_id FROM {$bp->groups->table_name} g WHERE g.id = %d", $this->id ) );
-		if ( is_null( $parent_id ) ) {
-			bp_group_hierarchy_debug( 'Could not load parent_id column from database.  Hierarchical processing is disabled.' );
-			$this->parent_id = 0;
-		} else {
-			$this->parent_id = $parent_id;
-		}
+
+
 		$this->true_slug = $this->slug;
 		$this->slug = $this->path = $this->buildPath();
+
 	}
-	
+
 	function buildPath() {
 		
 		$path = $this->true_slug;
@@ -156,28 +151,7 @@ class BP_Groups_Hierarchy extends BP_Groups_Group {
 		$group_count = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(id) FROM {$bp->groups->table_name} WHERE parent_id = %d AND status != 'hidden'", $group_id ) );
 		return (is_null($group_count)) ? 0 : $group_count;
 	}
-	
-	function __isset($varName) {
-		if(isset($this->vars)) {
-			return array_key_exists($varName,$this->vars);
-		}
-		bp_group_hierarchy_debug( 'Magic method: __isset called for "' . $varName . '", but class is not ready.' );
-		return false;
-	}
-	
-	function __set($varName, $value) {
-		$this->vars[$varName] = $value;
-	}
-	
-	function __get($varName) {
-		if(isset($this->vars)) {
-			if(array_key_exists($varName,$this->vars))
-				return $this->vars[$varName];
-		}
-		bp_group_hierarchy_debug( 'Magic method: __get called for "' . $varName . '", but class is not ready.' );
-		return false;
-	}
-	
+
 	/**
 	 * Static functions - I believe these functions to be called exclusively in a static context
 	 * UPDATE: these have all been marked static in BP 1.9 trunk
