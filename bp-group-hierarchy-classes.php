@@ -18,7 +18,9 @@ if( ! class_exists( 'BP_Groups_Group' ) ) {
 class BP_Groups_Hierarchy extends BP_Groups_Group {
 
 	var $vars = null;
-
+	
+	public $parent_id = 0;
+	
 	function __construct( $id, $parent_id = 0, $args = array() ) {
 
 		global $bp, $wpdb;
